@@ -1,0 +1,15 @@
+.btn, .modal-btn{
+    background-color: $darkPurple;
+    color: $white;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: all 0.8s;
+    &:hover{
+        background-color: $fire;
+    }
+}
+

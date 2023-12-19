@@ -4,22 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Blog - Redberry</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="assets/LOGO-12 1.png" type="image/x-icon" />
+    <script src="js/modal.js" type="module"></script>
+    <script src="index.js" type="module"></script>
+    <title>Our Blog - Redberry</title>
   </head>
   <body>
-    <header>
-      <div>
-        <img src="assets/LOGO-02 3.png" alt="logo" />
-        <button>შესვლა</button>
+    <header class="header">
+      <div class="header__logo-box">
+        <img class="header__logo" src="assets/LOGO-02 3.png" alt="logo" />
       </div>
+      <div class="header__button-box">
+        <button class="header__btn btn">შესვლა</button>
+      </div>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <div class="modal__content">
+          <h2 class="modal-title">შესვლა</h2>
+          <label class="modal-lable" for="email">ელ-ფოსტა</label>
+          <input class="modal-input" type="email" name="email">
+          <button class="modal-btn">შესვლა</button>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
     </header>
-    <main>
-      <section>
-        <h1>ბლოგი</h1>
-        <img src="assets/Blog-1024x355 1.png" alt="god knows what it is" />
+    <main class="main">
+      <section class="section">
+        <div class="section-hero">
+          <h1 class="main-title">ბლოგი</h1>
+          <img src="assets/Blog-1024x355 1.png" alt="god knows what it is" />
+        </div>
       </section>
-      <section>
+      <section class="section">
         <nav></nav>
         <div></div>
       </section>

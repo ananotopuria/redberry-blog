@@ -1,0 +1,16 @@
+.header{
+    padding: 0 7.6rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $white;
+    border-bottom: 1px solid $grey;
+    
+    &__logo{
+        width: 15rem;
+        height: 2.4rem;
+    }
+
+}
