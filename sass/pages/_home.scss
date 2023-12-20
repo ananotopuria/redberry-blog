@@ -8,3 +8,20 @@
         justify-content: space-between;
     }
 }
+
+.input-field.invalid {
+    border: 1px solid $red;
+    background-color: #faf2f3;
+  }
+  
+  #error-message {
+    position: absolute;
+    top: 66%;
+    left: 2.5rem;
+    background-color: transparent;
+    color: $red;
+  }
+  
+  .input-field.invalid + .error-message {
+    display: block;
+  }

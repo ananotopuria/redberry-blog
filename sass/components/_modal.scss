@@ -1,3 +1,11 @@
+
+.modal__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+
+}
 .modal{
     position: absolute;
     top: 50%;
@@ -18,11 +26,20 @@
     &-label{
         color: $black;
         font-size: 4rem;
+        justify-self: flex-start;
     }
     &-input{
         padding: 1rem 1.6rem;
         border-radius: 0.9rem;
 
+    }
+    &-icon{
+        background-color: $lime;
+        color: $white;
+        border-radius: 50%;
+        font-size: 5rem;
+        padding: 1rem;
+        align-self: center;
     }
    
 }
@@ -33,14 +50,4 @@
    color: $black;
     font-size: 34px;
     margin-left: 40rem;
-}
-
-
-.modal__content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  gap: 2rem;
-
 }
