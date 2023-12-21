@@ -1,0 +1,62 @@
+.back__btn {
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 12rem;
+  left: 5rem;
+
+  
+  .back__btn-icon {
+    font-size: 2rem;
+    color: $black;
+    background-color: $grey;
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+}
+
+.custom-file-upload {
+  margin-top: 1rem;
+  width: 100%;
+  height: 18rem;
+  border: 1px solid #ccc;
+  display: inline-block;
+  // padding: 50r 12px;
+  cursor: pointer;
+  background-color: $coolGrey;
+  border-radius: 1rem;
+  border: 1px dashed $darkGrey;
+  
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+
+.image-icon{
+  font-size: rem;
+}
+
+.form-component label, .textarea-label, .upload-txt{
+  color: $black;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 2rem;
+ 
+}
+.form-component input, .form-component select{
+  width: 28rem;
+  border-radius: 1rem;
+  border: 1px solid $grey;
+  padding: 12px 16px;
+ 
+}
+
+.textarea{
+  width: 100%;
+  background-color: $white;
+  border-radius: 1rem;
+  border: 1px solid $grey;
+}

@@ -1,7 +1,9 @@
+const addBlogBtn = document.querySelector(".add-btn");
+const loginBtn = document.querySelector(".header__btn");
+
+
 export function updateButtonVisibility() {
     const isSubscribed = localStorage.getItem("isSubscribed") === "true";
-    const addBlogBtn = document.querySelector(".add-btn");
-    const loginBtn = document.querySelector(".header__btn");
 
     if (isSubscribed) {
         addBlogBtn.classList.remove("hidden");
@@ -11,3 +13,12 @@ export function updateButtonVisibility() {
         loginBtn.classList.remove("hidden");
     }
 }
+
+
+addBlogBtn.addEventListener("click",function(e) {
+    e.preventDefault();
+    console.log(`btn clikced`)
+    location.href = `./form.html`;
+});
+
+

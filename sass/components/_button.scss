@@ -1,15 +1,26 @@
-.btn, .modal-btn{
-    background-color: $darkPurple;
-    color: $white;
-    border: none;
-    border-radius: 0.8rem;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 1rem 2rem;
-    cursor: pointer;
-    transition: all 0.8s;
-    &:hover{
-        background-color: $fire;
-    }
+.btn,
+.modal-btn,
+.form__btn {
+  background-color: $darkPurple;
+  color: $white;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 0.8s;
+  &:hover {
+    background-color: $fire;
+  }
 }
 
+.form__btn {
+  background-color: $grey;
+  margin-top: 4rem;
+  width: 28rem;
+  &-box{
+    display: flex;
+    justify-content: flex-end;
+  }
+}

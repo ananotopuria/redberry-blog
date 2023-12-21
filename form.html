@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/LOGO-12 1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="/js/add-form.js"></script>
+    <title>Add blog</title>
+  </head>
+  <body>
+    <header class="form__header">
+      <img
+        class="header__logo flex-center"
+        src="assets/LOGO-02 3.png"
+        alt="logo"
+      />
+    </header>
+    <main>
+      <button class="back__btn">
+        <ion-icon class="back__btn-icon" name="chevron-back-outline"></ion-icon>
+      </button>
+      <div class="container">
+        <h2 class="secondary-title">ბლოგის დამატება</h2>
+        <form action="/submit" method="post" enctype="multipart/form-data">
+          <p class="upload-txt">ატვირთე ფოტო</p>
+          <label class="custom-file-upload" for="fileInput">
+            <ion-icon class="image-icon" name="images-outline"></ion-icon>
+            ჩააგდე ფაილი აქ ან
+            <input
+              type="file"
+              id="fileInput"
+              name="fileInput"
+              accept="image/*"
+            />
+          </label>
+          <div class="flex-row">
+            <div class="form-component">
+              <label for="author">ავტორი *</label>
+              <input
+                type="text"
+                id="author"
+                name="author"
+                placeholder="შეიყვანეთ ავტორი"
+                required
+              />
+            </div>
+            <div class="form-component">
+              <label for="title">სათაური *</label>
+              <input
+                type="text"
+                id="title"
+                name="title"
+                placeholder="შეიყვანეთ სათაური"
+                required
+              />
+            </div>
+          </div>
+
+          <label class="textarea-label" for="description">აღწერა *</label>
+          <textarea
+            class="textarea"
+            id="description"
+            name="description"
+            rows="4"
+            cols="60"
+            placeholder="შეიყვანეთ აღწერა"
+            required
+          ></textarea>
+          <div class="flex-row">
+            <div class="form-component">
+              <label for="date">გამოქვეყნების თარიღი *</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-component">
+              <label for="category">კატეგორია *</label>
+              <select id="category" name="category" required>
+                <option value="technology">აირჩიე კატეგორია</option>
+                <option value="science">Science</option>
+                <option value="business">Business</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-component">
+            <label for="email">ელ-ფოსტა</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Example@redberry.ge"
+              required
+            />
+          </div>
+          <div class="form__btn-box">
+            <button class="form__btn">გამოქვეყნება</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
