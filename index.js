@@ -6,6 +6,7 @@ import {
   handleInputChange,
   handleSubscriptionClick,
 } from "/js/modal.js";
+// import { updateButtonVisibility } from "/js/add-form.js";
 
 openModalWindow();
 closeModalWindow();
@@ -26,3 +27,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   loadEmailAndSubscriptionStatus();
 });
+
+
+
+// displayAddButton();
+
+
+// updateButtonVisibility();
+
+// window.addEventListener("storage", (event) => {
+//     if (event.key === "isSubscribed") {
+//         updateButtonVisibility();
+//     }
+// });

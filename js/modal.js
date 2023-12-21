@@ -1,4 +1,5 @@
 import { validate } from "./email-validator.js";
+import { updateButtonVisibility } from "/js/add-form.js"
 
 export const openModalWindow = function () {
   const modal = document.querySelector(".modal");
@@ -73,9 +74,15 @@ function updateSubscriptionUI(isSubscribed) {
       modalLable.style.display = "none";
       modalIcon.classList.remove(`hidden`);
       modalOkButton.classList.remove(`hidden`);
-      //   emailErrorButton.classList.remove(`hidden`);
       const emailError = document.getElementById("error-message");
       emailError.style.display = "none";
+      updateButtonVisibility();
+
+      window.addEventListener("storage", (event) => {
+    if (event.key === "isSubscribed") {
+        updateButtonVisibility();
+    }
+});
     } else {
       emailInput.style.display = "block";
       subscribeButton.textContent = "შესვლა";
