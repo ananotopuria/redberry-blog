@@ -218,3 +218,48 @@ label {
   background-color: #fff;
   border-radius: 1rem;
   border: 1px solid #e4e3eb; }
+
+.validation {
+  margin-top: 1rem; }
+
+.validation li {
+  margin-left: 1.5rem; }
+
+.invalid {
+  border: 1px solid red; }
+
+.valid {
+  border: 1px solid green; }
+
+#author.invalid {
+  border: 1px solid red; }
+
+#author.valid {
+  border: 1px solid green; }
+
+#title.invalid {
+  border: 1px solid red; }
+
+#title.valid {
+  border: 1px solid green; }
+
+#email.invalid {
+  border: 1px solid red; }
+
+#email.valid {
+  border: 1px solid green; }
+
+#date.invalid {
+  border: 1px solid red; }
+
+#date.valid {
+  border: 1px solid green; }
+
+.validation li.invalid-message {
+  color: red; }
+
+.validation li.valid-message {
+  color: green; }
+
+.valid-message {
+  color: green; }

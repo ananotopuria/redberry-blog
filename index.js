@@ -28,15 +28,3 @@ document.addEventListener("DOMContentLoaded", function () {
   loadEmailAndSubscriptionStatus();
 });
 
-
-
-// displayAddButton();
-
-
-// updateButtonVisibility();
-
-// window.addEventListener("storage", (event) => {
-//     if (event.key === "isSubscribed") {
-//         updateButtonVisibility();
-//     }
-// });

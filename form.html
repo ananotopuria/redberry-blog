@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="assets/LOGO-12 1.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <script type="module" src="/js/add-form.js"></script>
+    <script type="module" src="/js/form-validations.js"></script>
     <title>Add blog</title>
   </head>
   <body>
@@ -45,19 +46,26 @@
                 placeholder="შეიყვანეთ ავტორი"
                 required
               />
+              <ul class="validation">
+                <li id="name-error">მინიმუმ 4 სიმბოლო</li>
+                <li id="word-count-validation">მინიმუმ ორი სიტყვა</li>
+                <li id="georgian-char-validation">მხოლოდ ქართული სიმბოლოები</li>
+              </ul>
             </div>
             <div class="form-component">
-              <label for="title">სათაური *</label>
-              <input
-                type="text"
-                id="title"
-                name="title"
-                placeholder="შეიყვანეთ სათაური"
-                required
-              />
+              <div>
+                <label for="title">სათაური *</label>
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  placeholder="შეიყვანეთ სათაური"
+                  required
+                />
+              </div>
+              <p class="validation" id="title-error">მინიმუმ 2 სიმბოლო</p>
             </div>
           </div>
-
           <label class="textarea-label" for="description">აღწერა *</label>
           <textarea
             class="textarea"
@@ -68,6 +76,7 @@
             placeholder="შეიყვანეთ აღწერა"
             required
           ></textarea>
+          <p class="validation" id="description-error">მინიმუმ 4 სიმბოლო</p>
           <div class="flex-row">
             <div class="form-component">
               <label for="date">გამოქვეყნების თარიღი *</label>
@@ -91,6 +100,7 @@
               placeholder="Example@redberry.ge"
               required
             />
+            <p class="validation" id="email-error">მეილი უნდა მთავრდებოდეს @redberry.ge-ით</p>
           </div>
           <div class="form__btn-box">
             <button class="form__btn">გამოქვეყნება</button>
