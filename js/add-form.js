@@ -15,10 +15,10 @@ export function updateButtonVisibility() {
 }
 
 
-// addBlogBtn.addEventListener("click",function(e) {
-//     e.preventDefault();
-//     console.log(`btn clikced`)
-//     location.href = `./form.html`;
-// });
+addBlogBtn.addEventListener("click",function(e) {
+    e.preventDefault();
+    console.log(`btn clikced`)
+    location.href = `./form.html`;
+});
 
 

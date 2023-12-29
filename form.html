@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script type="module" src="/js/add-form.js"></script>
     <script type="module" src="/js/form-validations.js"></script>
+    <script type="module" src="/js/data.js"></script>
     <title>Add blog</title>
   </head>
   <body>
@@ -23,8 +24,8 @@
         <ion-icon class="back__btn-icon" name="chevron-back-outline"></ion-icon>
       </button>
       <div class="container">
-        <h2 class="secondary-title">ბლოგის დამატება</h2>
-        <form action="/submit" method="post" enctype="multipart/form-data">
+        <h2 class="secondary-title">ბლოგის დამატება1</h2>
+        <form id="blogForm" >
           <p class="upload-txt">ატვირთე ფოტო</p>
           <label class="custom-file-upload" for="fileInput">
             <ion-icon class="image-icon" name="images-outline"></ion-icon>
@@ -103,7 +104,7 @@
             <p class="validation" id="email-error">მეილი უნდა მთავრდებოდეს @redberry.ge-ით</p>
           </div>
           <div class="form__btn-box">
-            <button class="form__btn">გამოქვეყნება</button>
+            <button class="form__btn" id="form-submit">გამოქვეყნება</button>
           </div>
         </form>
       </div>
